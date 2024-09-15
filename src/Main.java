@@ -16,10 +16,12 @@ public class Main {
         System.out.println("Задание 2");
         System.out.println();
         int[] ints1 = {1, 2, 3, 4, 5};
-        Arrays.sort(ints1);
-        System.out.println(Arrays.toString(ints1));
-        System.out.println("Максимальное " + ints1[ints1.length - 1]);
-        System.out.println("Минимальное " + ints1[0]);
+        if (ints1.length > 0) {
+            System.out.println("Максимальное " + ints1[ints1.length - 1]);
+            System.out.println("Минимальное " + ints1[0]);
+        }else {
+            System.out.println("Максимальное и минимальное не существует");
+        }
         System.out.println();
         System.out.println("Задание 3");
         System.out.println();
